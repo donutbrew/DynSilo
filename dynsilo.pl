@@ -15,7 +15,7 @@ my $localkey = "";
 my $domain    = ""  ;
 # Subdomain is the subdomain you want to update, for xxx.example.com, you would enter "xxx"
 my $subdomain = ""  ;
-
+$subdomain = $query->param(sub) if ($query->param(sub));
 
 use CGI::Carp qw(fatalsToBrowser);
 use CGI qw(:standard);
